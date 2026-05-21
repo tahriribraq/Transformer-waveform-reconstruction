@@ -234,65 +234,6 @@ def get_FHD(wf, bin_width=1.0):
     
     return -np.sum(p * np.log(p))
 
-
-def get_VCR(wf, bin_width=1.0):
-    """
-    Compute VCR (Vertical Canopy Rugosity / StdBin) for a waveform array.
-    Aggregates counts into height bins before computation.
-    
-    wf: Nx2 array-like where column 0 = heights, column 1 = counts.
-    bin_width: width of height bins (default 1.0 m)
-    Returns: VCR (float) - weighted variance of heights
-    """
-    wf = np.asarray(wf)
-    if wf.size == 0:
-        return 0.0
-    
-    heights = wf[:, 0].astype(float)
-    counts = wf[:, 1].astype(float)
-    
-    # Ensure heights ascending for digitize
-    sort_idx = np.argsort(heights)
-    heights = heights[sort_idx]
-    counts = counts[sort_idx]
-    
-    # Make bin edges from floor(min) to ceil(max) with step bin_width
-    bin_edges = np.arange(
-        np.floor(heights.min()),
-        np.ceil(heights.max()) + bin_width,
-        bin_width
-    )
-    
-    # Compute bin centers
-    bin_centers = (bin_edges[:-1] + bin_edges[1:]) / 2
-    
-    # Digitize and aggregate counts into bins
-    bin_idx = np.digitize(heights, bin_edges) - 1
-    bin_idx = np.clip(bin_idx, 0, len(bin_centers) - 1)
-    
-    binned_counts = np.zeros(len(bin_centers))
-    for i in range(len(binned_counts)):
-        mask = (bin_idx == i)
-        if mask.any():
-            binned_counts[i] = counts[mask].sum()
-    
-    # Compute VCR on binned data
-    total_counts = binned_counts.sum()
-    if total_counts == 0:
-        return 0.0
-    
-    normalized_counts = binned_counts / total_counts
-    
-    # Weighted mean height
-    H_x = (bin_centers * normalized_counts).sum()
-    
-    # Weighted variance (VCR)
-    VCR = (normalized_counts * (bin_centers - H_x) ** 2).sum()
-    
-    return VCR
-
-
-"""
 def get_VCR(wf):
     
     Compute variance (StdBin) of heights weighted by counts for a waveform array.
@@ -311,7 +252,6 @@ def get_VCR(wf):
     StdBin = (normalized_counts * (heights - H_x) ** 2).sum()
 
     return StdBin
-"""
 
 def evaluate_CSC_predictions(predictions, print_results=True):
     """
