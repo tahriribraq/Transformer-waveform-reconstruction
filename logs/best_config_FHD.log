@@ -1,0 +1,538 @@
+Loading data from data
+Loaded 101110 waveform pairs
+Data splits: train=80888, val=10111, test=10111
+
+============================================================
+Training Configuration
+============================================================
+Device: cuda
+Model parameters: 2,050,210
+Training samples: 80888
+Validation samples: 10111
+Batch size: 32
+Learning rate: 0.0001
+Epochs: 100
+============================================================
+
+Epoch 1/100 (390.5s)
+  Train Loss: 2.1145 (count=3.3657, shape=0.2542, zero=0.2467, fhd=0.1034, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.7479 (count=3.0109, shape=0.1647, zero=0.1016, fhd=0.1034, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6149, R²=0.3660, RMSE=21.25, ZeroAcc=96.03%m
+  ★ New best model!
+
+Epoch 2/100 (389.5s)
+  Train Loss: 1.7549 (count=3.0257, shape=0.1744, zero=0.0802, fhd=0.0435, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6868 (count=2.9579, shape=0.1480, zero=0.0695, fhd=0.0435, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6387, R²=0.3978, RMSE=20.71, ZeroAcc=96.99%m
+  ★ New best model!
+
+Epoch 3/100 (389.3s)
+  Train Loss: 1.7136 (count=2.9847, shape=0.1617, zero=0.0692, fhd=0.0389, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6649 (count=2.9404, shape=0.1410, zero=0.0575, fhd=0.0389, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6469, R²=0.3990, RMSE=20.69, ZeroAcc=97.99%m
+  ★ New best model!
+
+Epoch 4/100 (389.8s)
+  Train Loss: 1.6939 (count=2.9652, shape=0.1554, zero=0.0644, fhd=0.0366, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6601 (count=2.9322, shape=0.1399, zero=0.0612, fhd=0.0366, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6482, R²=0.3929, RMSE=20.80, ZeroAcc=97.57%m
+  ★ New best model!
+
+Epoch 5/100 (389.8s)
+  Train Loss: 1.6821 (count=2.9534, shape=0.1518, zero=0.0616, fhd=0.0351, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6477 (count=2.9141, shape=0.1360, zero=0.0661, fhd=0.0351, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6513, R²=0.4013, RMSE=20.65, ZeroAcc=97.16%m
+  ★ New best model!
+
+Epoch 6/100 (394.6s)
+  Train Loss: 1.6729 (count=2.9450, shape=0.1489, zero=0.0596, fhd=0.0337, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6393 (count=2.9128, shape=0.1344, zero=0.0513, fhd=0.0337, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6536, R²=0.4177, RMSE=20.37, ZeroAcc=97.92%m
+  ★ New best model!
+
+Epoch 7/100 (389.7s)
+  Train Loss: 1.6657 (count=2.9379, shape=0.1466, zero=0.0580, fhd=0.0327, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6335 (count=2.9025, shape=0.1340, zero=0.0581, fhd=0.0327, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6562, R²=0.4257, RMSE=20.23, ZeroAcc=97.18%m
+  ★ New best model!
+
+Epoch 8/100 (388.9s)
+  Train Loss: 1.6606 (count=2.9330, shape=0.1449, zero=0.0570, fhd=0.0320, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6325 (count=2.9111, shape=0.1339, zero=0.0445, fhd=0.0320, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6571, R²=0.4244, RMSE=20.25, ZeroAcc=98.15%m
+  ★ New best model!
+
+Epoch 9/100 (389.6s)
+  Train Loss: 1.6557 (count=2.9286, shape=0.1435, zero=0.0556, fhd=0.0312, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6328 (count=2.9054, shape=0.1318, zero=0.0544, fhd=0.0312, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6576, R²=0.4154, RMSE=20.41, ZeroAcc=97.70%m
+  ★ New best model!
+
+Epoch 10/100 (389.0s)
+  Train Loss: 1.6524 (count=2.9257, shape=0.1425, zero=0.0548, fhd=0.0307, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6310 (count=2.9096, shape=0.1328, zero=0.0453, fhd=0.0307, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6578, R²=0.4276, RMSE=20.19, ZeroAcc=98.33%m
+  ★ New best model!
+
+Epoch 11/100 (390.5s)
+  Train Loss: 1.6498 (count=2.9231, shape=0.1416, zero=0.0541, fhd=0.0304, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6255 (count=2.8995, shape=0.1307, zero=0.0532, fhd=0.0304, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6590, R²=0.4243, RMSE=20.25, ZeroAcc=97.63%m
+  ★ New best model!
+
+Epoch 12/100 (389.6s)
+  Train Loss: 1.6470 (count=2.9206, shape=0.1409, zero=0.0532, fhd=0.0298, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6253 (count=2.8946, shape=0.1300, zero=0.0525, fhd=0.0298, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6593, R²=0.4257, RMSE=20.23, ZeroAcc=97.80%m
+  ★ New best model!
+
+Epoch 13/100 (389.7s)
+  Train Loss: 1.6455 (count=2.9189, shape=0.1404, zero=0.0529, fhd=0.0299, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6232 (count=2.8957, shape=0.1301, zero=0.0495, fhd=0.0299, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6597, R²=0.4210, RMSE=20.31, ZeroAcc=97.94%m
+  ★ New best model!
+
+Epoch 14/100 (389.4s)
+  Train Loss: 1.6435 (count=2.9171, shape=0.1398, zero=0.0523, fhd=0.0294, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6213 (count=2.8972, shape=0.1302, zero=0.0460, fhd=0.0294, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6608, R²=0.4325, RMSE=20.11, ZeroAcc=98.13%m
+  ★ New best model!
+
+Epoch 15/100 (389.1s)
+  Train Loss: 1.6421 (count=2.9157, shape=0.1395, zero=0.0519, fhd=0.0292, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6208 (count=2.8870, shape=0.1294, zero=0.0563, fhd=0.0292, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6613, R²=0.4328, RMSE=20.10, ZeroAcc=97.37%m
+  ★ New best model!
+
+Epoch 16/100 (390.7s)
+  Train Loss: 1.6409 (count=2.9145, shape=0.1392, zero=0.0516, fhd=0.0289, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6203 (count=2.8869, shape=0.1298, zero=0.0544, fhd=0.0289, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6614, R²=0.4341, RMSE=20.08, ZeroAcc=97.55%m
+  ★ New best model!
+
+Epoch 17/100 (393.5s)
+  Train Loss: 1.6393 (count=2.9131, shape=0.1388, zero=0.0511, fhd=0.0287, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6198 (count=2.8913, shape=0.1296, zero=0.0504, fhd=0.0287, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6617, R²=0.4317, RMSE=20.12, ZeroAcc=97.77%m
+  ★ New best model!
+
+Epoch 18/100 (389.5s)
+  Train Loss: 1.6382 (count=2.9119, shape=0.1386, zero=0.0508, fhd=0.0284, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6199 (count=2.8907, shape=0.1294, zero=0.0522, fhd=0.0284, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6618, R²=0.4304, RMSE=20.15, ZeroAcc=97.72%m
+  ★ New best model!
+
+Epoch 19/100 (389.3s)
+  Train Loss: 1.6372 (count=2.9109, shape=0.1383, zero=0.0506, fhd=0.0283, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6178 (count=2.8907, shape=0.1298, zero=0.0496, fhd=0.0283, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6618, R²=0.4295, RMSE=20.16, ZeroAcc=97.77%m
+  ★ New best model!
+
+Epoch 20/100 (389.0s)
+  Train Loss: 1.6363 (count=2.9104, shape=0.1382, zero=0.0501, fhd=0.0279, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6178 (count=2.8898, shape=0.1295, zero=0.0491, fhd=0.0279, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6621, R²=0.4342, RMSE=20.08, ZeroAcc=97.92%m
+  ★ New best model!
+
+Epoch 21/100 (391.4s)
+  Train Loss: 1.6354 (count=2.9094, shape=0.1380, zero=0.0499, fhd=0.0277, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6177 (count=2.8890, shape=0.1292, zero=0.0495, fhd=0.0277, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6621, R²=0.4346, RMSE=20.07, ZeroAcc=97.91%m
+  ★ New best model!
+
+Epoch 22/100 (391.4s)
+  Train Loss: 1.6350 (count=2.9090, shape=0.1379, zero=0.0498, fhd=0.0278, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6181 (count=2.8878, shape=0.1289, zero=0.0502, fhd=0.0278, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6621, R²=0.4327, RMSE=20.10, ZeroAcc=97.79%m
+
+Epoch 23/100 (389.3s)
+  Train Loss: 1.6345 (count=2.9086, shape=0.1377, zero=0.0496, fhd=0.0276, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6174 (count=2.8870, shape=0.1288, zero=0.0508, fhd=0.0276, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6624, R²=0.4310, RMSE=20.13, ZeroAcc=97.76%m
+  ★ New best model!
+
+Epoch 24/100 (389.5s)
+  Train Loss: 1.6341 (count=2.9082, shape=0.1377, zero=0.0496, fhd=0.0275, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6168 (count=2.8883, shape=0.1290, zero=0.0494, fhd=0.0275, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6624, R²=0.4319, RMSE=20.12, ZeroAcc=97.86%m
+
+Epoch 25/100 (388.1s)
+  Train Loss: 1.6339 (count=2.9081, shape=0.1377, zero=0.0493, fhd=0.0274, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6171 (count=2.8872, shape=0.1288, zero=0.0498, fhd=0.0274, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6625, R²=0.4326, RMSE=20.11, ZeroAcc=97.83%m
+  ★ New best model!
+
+Epoch 26/100 (388.0s)
+  Train Loss: 1.6440 (count=2.9178, shape=0.1393, zero=0.0531, fhd=0.0300, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6271 (count=2.8872, shape=0.1293, zero=0.0589, fhd=0.0300, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6612, R²=0.4338, RMSE=20.08, ZeroAcc=97.28%m
+
+Epoch 27/100 (388.4s)
+  Train Loss: 1.6430 (count=2.9166, shape=0.1390, zero=0.0527, fhd=0.0299, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6211 (count=2.8909, shape=0.1292, zero=0.0556, fhd=0.0299, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6615, R²=0.4209, RMSE=20.31, ZeroAcc=97.62%m
+
+Epoch 28/100 (392.1s)
+  Train Loss: 1.6414 (count=2.9156, shape=0.1386, zero=0.0522, fhd=0.0294, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6209 (count=2.8978, shape=0.1302, zero=0.0451, fhd=0.0294, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6608, R²=0.4257, RMSE=20.23, ZeroAcc=98.17%m
+
+Epoch 29/100 (390.0s)
+  Train Loss: 1.6400 (count=2.9142, shape=0.1381, zero=0.0517, fhd=0.0293, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6216 (count=2.8915, shape=0.1287, zero=0.0497, fhd=0.0293, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6610, R²=0.4306, RMSE=20.14, ZeroAcc=97.99%m
+
+Epoch 30/100 (391.0s)
+  Train Loss: 1.6391 (count=2.9129, shape=0.1379, zero=0.0520, fhd=0.0291, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6200 (count=2.8868, shape=0.1287, zero=0.0537, fhd=0.0291, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6620, R²=0.4309, RMSE=20.14, ZeroAcc=97.46%m
+
+Epoch 31/100 (392.9s)
+  Train Loss: 1.6380 (count=2.9119, shape=0.1375, zero=0.0515, fhd=0.0290, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6243 (count=2.9030, shape=0.1302, zero=0.0439, fhd=0.0290, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6607, R²=0.4339, RMSE=20.08, ZeroAcc=98.31%m
+
+Epoch 32/100 (390.3s)
+  Train Loss: 1.6370 (count=2.9110, shape=0.1373, zero=0.0513, fhd=0.0289, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6190 (count=2.8840, shape=0.1285, zero=0.0567, fhd=0.0289, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6621, R²=0.4303, RMSE=20.15, ZeroAcc=97.43%m
+
+Epoch 33/100 (395.7s)
+  Train Loss: 1.6360 (count=2.9100, shape=0.1370, zero=0.0507, fhd=0.0287, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6169 (count=2.8901, shape=0.1287, zero=0.0460, fhd=0.0287, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6621, R²=0.4350, RMSE=20.06, ZeroAcc=98.07%m
+
+Epoch 34/100 (390.7s)
+  Train Loss: 1.6351 (count=2.9092, shape=0.1367, zero=0.0509, fhd=0.0285, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6155 (count=2.8886, shape=0.1288, zero=0.0486, fhd=0.0285, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6625, R²=0.4348, RMSE=20.07, ZeroAcc=97.87%m
+
+Epoch 35/100 (391.0s)
+  Train Loss: 1.6342 (count=2.9083, shape=0.1366, zero=0.0504, fhd=0.0284, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6166 (count=2.8858, shape=0.1295, zero=0.0537, fhd=0.0284, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6620, R²=0.4305, RMSE=20.14, ZeroAcc=97.54%m
+
+Epoch 36/100 (392.1s)
+  Train Loss: 1.6332 (count=2.9071, shape=0.1363, zero=0.0501, fhd=0.0283, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6151 (count=2.8862, shape=0.1281, zero=0.0456, fhd=0.0283, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6636, R²=0.4365, RMSE=20.04, ZeroAcc=98.14%m
+  ★ New best model!
+
+Epoch 37/100 (392.5s)
+  Train Loss: 1.6324 (count=2.9061, shape=0.1361, zero=0.0498, fhd=0.0283, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6173 (count=2.8910, shape=0.1291, zero=0.0507, fhd=0.0283, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6620, R²=0.4326, RMSE=20.11, ZeroAcc=97.72%m
+
+Epoch 38/100 (389.9s)
+  Train Loss: 1.6315 (count=2.9056, shape=0.1358, zero=0.0497, fhd=0.0279, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6167 (count=2.8909, shape=0.1280, zero=0.0489, fhd=0.0279, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6628, R²=0.4199, RMSE=20.33, ZeroAcc=97.87%m
+
+Epoch 39/100 (390.8s)
+  Train Loss: 1.6310 (count=2.9050, shape=0.1358, zero=0.0494, fhd=0.0279, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6202 (count=2.8876, shape=0.1284, zero=0.0529, fhd=0.0279, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6625, R²=0.4244, RMSE=20.25, ZeroAcc=97.78%m
+
+Epoch 40/100 (390.2s)
+  Train Loss: 1.6300 (count=2.9040, shape=0.1354, zero=0.0491, fhd=0.0278, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6153 (count=2.8873, shape=0.1280, zero=0.0474, fhd=0.0278, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6635, R²=0.4341, RMSE=20.08, ZeroAcc=98.00%m
+
+Epoch 41/100 (390.5s)
+  Train Loss: 1.6292 (count=2.9033, shape=0.1353, zero=0.0490, fhd=0.0275, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6157 (count=2.8932, shape=0.1288, zero=0.0434, fhd=0.0275, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6628, R²=0.4369, RMSE=20.03, ZeroAcc=98.27%m
+
+Epoch 42/100 (394.4s)
+  Train Loss: 1.6284 (count=2.9028, shape=0.1351, zero=0.0485, fhd=0.0274, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6184 (count=2.8957, shape=0.1291, zero=0.0419, fhd=0.0274, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6628, R²=0.4346, RMSE=20.07, ZeroAcc=98.42%m
+
+Epoch 43/100 (390.5s)
+  Train Loss: 1.6278 (count=2.9018, shape=0.1350, zero=0.0483, fhd=0.0274, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6180 (count=2.8946, shape=0.1300, zero=0.0448, fhd=0.0274, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6620, R²=0.4326, RMSE=20.11, ZeroAcc=98.13%m
+
+Epoch 44/100 (390.6s)
+  Train Loss: 1.6272 (count=2.9012, shape=0.1349, zero=0.0483, fhd=0.0273, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6126 (count=2.8845, shape=0.1279, zero=0.0472, fhd=0.0273, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6646, R²=0.4391, RMSE=19.99, ZeroAcc=97.81%m
+  ★ New best model!
+
+Epoch 45/100 (390.5s)
+  Train Loss: 1.6266 (count=2.9006, shape=0.1346, zero=0.0480, fhd=0.0272, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6145 (count=2.8929, shape=0.1289, zero=0.0417, fhd=0.0272, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6639, R²=0.4352, RMSE=20.06, ZeroAcc=98.33%m
+
+Epoch 46/100 (391.7s)
+  Train Loss: 1.6260 (count=2.9004, shape=0.1346, zero=0.0475, fhd=0.0269, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6152 (count=2.8964, shape=0.1284, zero=0.0409, fhd=0.0269, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6640, R²=0.4396, RMSE=19.98, ZeroAcc=98.09%m
+
+Epoch 47/100 (390.2s)
+  Train Loss: 1.6251 (count=2.8997, shape=0.1344, zero=0.0471, fhd=0.0268, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6139 (count=2.8804, shape=0.1276, zero=0.0515, fhd=0.0268, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6637, R²=0.4350, RMSE=20.06, ZeroAcc=97.55%m
+
+Epoch 48/100 (390.3s)
+  Train Loss: 1.6246 (count=2.8988, shape=0.1342, zero=0.0471, fhd=0.0269, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6109 (count=2.8823, shape=0.1273, zero=0.0506, fhd=0.0269, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6650, R²=0.4376, RMSE=20.02, ZeroAcc=97.61%m
+  ★ New best model!
+
+Epoch 49/100 (391.7s)
+  Train Loss: 1.6240 (count=2.8981, shape=0.1340, zero=0.0470, fhd=0.0268, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6138 (count=2.8930, shape=0.1286, zero=0.0398, fhd=0.0268, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6635, R²=0.4287, RMSE=20.18, ZeroAcc=98.37%m
+
+Epoch 50/100 (391.5s)
+  Train Loss: 1.6235 (count=2.8976, shape=0.1340, zero=0.0467, fhd=0.0267, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6122 (count=2.8787, shape=0.1264, zero=0.0488, fhd=0.0267, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6655, R²=0.4394, RMSE=19.99, ZeroAcc=97.86%m
+  ★ New best model!
+
+Epoch 51/100 (390.6s)
+  Train Loss: 1.6230 (count=2.8973, shape=0.1338, zero=0.0467, fhd=0.0266, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6102 (count=2.8856, shape=0.1270, zero=0.0429, fhd=0.0266, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6653, R²=0.4377, RMSE=20.02, ZeroAcc=98.27%m
+
+Epoch 52/100 (391.1s)
+  Train Loss: 1.6225 (count=2.8968, shape=0.1336, zero=0.0464, fhd=0.0265, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6090 (count=2.8842, shape=0.1272, zero=0.0415, fhd=0.0265, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6651, R²=0.4362, RMSE=20.04, ZeroAcc=98.11%m
+
+Epoch 53/100 (390.5s)
+  Train Loss: 1.6217 (count=2.8959, shape=0.1335, zero=0.0462, fhd=0.0264, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6093 (count=2.8852, shape=0.1266, zero=0.0423, fhd=0.0264, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6656, R²=0.4373, RMSE=20.02, ZeroAcc=98.15%m
+  ★ New best model!
+
+Epoch 54/100 (390.3s)
+  Train Loss: 1.6211 (count=2.8953, shape=0.1334, zero=0.0461, fhd=0.0262, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6081 (count=2.8814, shape=0.1265, zero=0.0457, fhd=0.0262, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6658, R²=0.4380, RMSE=20.01, ZeroAcc=98.11%m
+  ★ New best model!
+
+Epoch 55/100 (390.5s)
+  Train Loss: 1.6205 (count=2.8950, shape=0.1332, zero=0.0458, fhd=0.0261, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6118 (count=2.8881, shape=0.1277, zero=0.0430, fhd=0.0261, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6648, R²=0.4361, RMSE=20.04, ZeroAcc=98.20%m
+
+Epoch 56/100 (391.7s)
+  Train Loss: 1.6200 (count=2.8942, shape=0.1331, zero=0.0456, fhd=0.0261, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6104 (count=2.8856, shape=0.1269, zero=0.0439, fhd=0.0261, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6655, R²=0.4335, RMSE=20.09, ZeroAcc=98.18%m
+
+Epoch 57/100 (390.4s)
+  Train Loss: 1.6195 (count=2.8939, shape=0.1331, zero=0.0452, fhd=0.0259, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6107 (count=2.8864, shape=0.1278, zero=0.0445, fhd=0.0259, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6643, R²=0.4319, RMSE=20.12, ZeroAcc=98.00%m
+
+Epoch 58/100 (390.5s)
+  Train Loss: 1.6190 (count=2.8933, shape=0.1329, zero=0.0453, fhd=0.0259, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6084 (count=2.8803, shape=0.1262, zero=0.0454, fhd=0.0259, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6660, R²=0.4410, RMSE=19.96, ZeroAcc=98.00%m
+  ★ New best model!
+
+Epoch 59/100 (391.0s)
+  Train Loss: 1.6186 (count=2.8930, shape=0.1328, zero=0.0453, fhd=0.0258, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6113 (count=2.8914, shape=0.1273, zero=0.0386, fhd=0.0258, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6656, R²=0.4411, RMSE=19.96, ZeroAcc=98.44%m
+
+Epoch 60/100 (394.3s)
+  Train Loss: 1.6181 (count=2.8926, shape=0.1327, zero=0.0449, fhd=0.0256, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6086 (count=2.8833, shape=0.1268, zero=0.0466, fhd=0.0256, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6656, R²=0.4351, RMSE=20.06, ZeroAcc=97.93%m
+
+Epoch 61/100 (391.2s)
+  Train Loss: 1.6176 (count=2.8920, shape=0.1326, zero=0.0448, fhd=0.0255, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6085 (count=2.8774, shape=0.1261, zero=0.0496, fhd=0.0255, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6657, R²=0.4365, RMSE=20.04, ZeroAcc=97.81%m
+
+Epoch 62/100 (390.6s)
+  Train Loss: 1.6173 (count=2.8917, shape=0.1326, zero=0.0447, fhd=0.0255, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6080 (count=2.8832, shape=0.1268, zero=0.0427, fhd=0.0255, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6661, R²=0.4412, RMSE=19.95, ZeroAcc=98.12%m
+  ★ New best model!
+
+Epoch 63/100 (390.5s)
+  Train Loss: 1.6169 (count=2.8912, shape=0.1325, zero=0.0446, fhd=0.0254, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6074 (count=2.8818, shape=0.1262, zero=0.0439, fhd=0.0254, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6662, R²=0.4373, RMSE=20.02, ZeroAcc=98.10%m
+  ★ New best model!
+
+Epoch 64/100 (393.0s)
+  Train Loss: 1.6162 (count=2.8906, shape=0.1324, zero=0.0443, fhd=0.0252, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6075 (count=2.8792, shape=0.1262, zero=0.0458, fhd=0.0252, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6664, R²=0.4413, RMSE=19.95, ZeroAcc=97.90%m
+  ★ New best model!
+
+Epoch 65/100 (390.8s)
+  Train Loss: 1.6161 (count=2.8906, shape=0.1324, zero=0.0441, fhd=0.0252, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6093 (count=2.8825, shape=0.1271, zero=0.0448, fhd=0.0252, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6657, R²=0.4399, RMSE=19.98, ZeroAcc=98.06%m
+
+Epoch 66/100 (391.5s)
+  Train Loss: 1.6159 (count=2.8903, shape=0.1323, zero=0.0442, fhd=0.0251, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6069 (count=2.8773, shape=0.1261, zero=0.0484, fhd=0.0251, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6665, R²=0.4382, RMSE=20.01, ZeroAcc=97.80%m
+  ★ New best model!
+
+Epoch 67/100 (390.3s)
+  Train Loss: 1.6154 (count=2.8900, shape=0.1322, zero=0.0440, fhd=0.0250, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6065 (count=2.8786, shape=0.1262, zero=0.0453, fhd=0.0250, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6665, R²=0.4383, RMSE=20.01, ZeroAcc=97.97%m
+  ★ New best model!
+
+Epoch 68/100 (390.1s)
+  Train Loss: 1.6152 (count=2.8897, shape=0.1322, zero=0.0439, fhd=0.0250, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6075 (count=2.8814, shape=0.1263, zero=0.0441, fhd=0.0250, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6663, R²=0.4380, RMSE=20.01, ZeroAcc=98.09%m
+
+Epoch 69/100 (390.4s)
+  Train Loss: 1.6150 (count=2.8895, shape=0.1322, zero=0.0437, fhd=0.0249, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6066 (count=2.8788, shape=0.1264, zero=0.0465, fhd=0.0249, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6663, R²=0.4395, RMSE=19.98, ZeroAcc=97.86%m
+
+Epoch 70/100 (390.7s)
+  Train Loss: 1.6147 (count=2.8891, shape=0.1322, zero=0.0437, fhd=0.0249, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6075 (count=2.8813, shape=0.1263, zero=0.0445, fhd=0.0249, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6663, R²=0.4388, RMSE=20.00, ZeroAcc=98.07%m
+
+Epoch 71/100 (390.4s)
+  Train Loss: 1.6146 (count=2.8890, shape=0.1321, zero=0.0438, fhd=0.0249, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6068 (count=2.8804, shape=0.1261, zero=0.0438, fhd=0.0249, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6665, R²=0.4402, RMSE=19.97, ZeroAcc=98.06%m
+  ★ New best model!
+
+Epoch 72/100 (390.0s)
+  Train Loss: 1.6143 (count=2.8888, shape=0.1320, zero=0.0434, fhd=0.0248, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6067 (count=2.8805, shape=0.1262, zero=0.0440, fhd=0.0248, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6665, R²=0.4397, RMSE=19.98, ZeroAcc=98.06%m
+
+Epoch 73/100 (391.8s)
+  Train Loss: 1.6143 (count=2.8888, shape=0.1320, zero=0.0436, fhd=0.0248, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6069 (count=2.8801, shape=0.1261, zero=0.0448, fhd=0.0248, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6664, R²=0.4391, RMSE=19.99, ZeroAcc=98.01%m
+
+Epoch 74/100 (390.6s)
+  Train Loss: 1.6142 (count=2.8886, shape=0.1320, zero=0.0438, fhd=0.0248, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6069 (count=2.8808, shape=0.1263, zero=0.0445, fhd=0.0248, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6664, R²=0.4389, RMSE=19.99, ZeroAcc=98.01%m
+
+Epoch 75/100 (390.3s)
+  Train Loss: 1.6140 (count=2.8885, shape=0.1320, zero=0.0436, fhd=0.0247, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6071 (count=2.8807, shape=0.1263, zero=0.0447, fhd=0.0247, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6664, R²=0.4398, RMSE=19.98, ZeroAcc=98.01%m
+
+Epoch 76/100 (390.6s)
+  Train Loss: 1.6260 (count=2.9006, shape=0.1340, zero=0.0478, fhd=0.0274, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6116 (count=2.8877, shape=0.1268, zero=0.0435, fhd=0.0274, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6648, R²=0.4344, RMSE=20.08, ZeroAcc=98.14%m
+
+Epoch 77/100 (391.4s)
+  Train Loss: 1.6259 (count=2.9005, shape=0.1340, zero=0.0476, fhd=0.0273, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6152 (count=2.8793, shape=0.1276, zero=0.0561, fhd=0.0273, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6644, R²=0.4408, RMSE=19.96, ZeroAcc=97.40%m
+
+Epoch 78/100 (395.8s)
+  Train Loss: 1.6257 (count=2.9002, shape=0.1340, zero=0.0476, fhd=0.0273, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6176 (count=2.8957, shape=0.1285, zero=0.0473, fhd=0.0273, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6629, R²=0.4243, RMSE=20.25, ZeroAcc=97.68%m
+
+Epoch 79/100 (391.2s)
+  Train Loss: 1.6253 (count=2.8998, shape=0.1338, zero=0.0472, fhd=0.0274, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6109 (count=2.8810, shape=0.1267, zero=0.0490, fhd=0.0274, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6636, R²=0.4318, RMSE=20.12, ZeroAcc=97.97%m
+
+Epoch 80/100 (391.7s)
+  Train Loss: 1.6250 (count=2.8992, shape=0.1338, zero=0.0472, fhd=0.0274, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6101 (count=2.8841, shape=0.1274, zero=0.0424, fhd=0.0274, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6649, R²=0.4400, RMSE=19.97, ZeroAcc=98.27%m
+
+Epoch 81/100 (391.5s)
+  Train Loss: 1.6245 (count=2.8993, shape=0.1336, zero=0.0471, fhd=0.0272, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6109 (count=2.8841, shape=0.1266, zero=0.0470, fhd=0.0272, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6651, R²=0.4389, RMSE=19.99, ZeroAcc=97.88%m
+
+Epoch 82/100 (373.2s)
+  Train Loss: 1.6242 (count=2.8986, shape=0.1336, zero=0.0473, fhd=0.0272, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6118 (count=2.8834, shape=0.1282, zero=0.0486, fhd=0.0272, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6640, R²=0.4353, RMSE=20.06, ZeroAcc=97.76%m
+
+Epoch 83/100 (218.9s)
+  Train Loss: 1.6239 (count=2.8983, shape=0.1334, zero=0.0469, fhd=0.0272, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6112 (count=2.8872, shape=0.1274, zero=0.0428, fhd=0.0272, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6647, R²=0.4353, RMSE=20.06, ZeroAcc=98.24%m
+
+Epoch 84/100 (212.0s)
+  Train Loss: 1.6235 (count=2.8979, shape=0.1332, zero=0.0471, fhd=0.0271, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6134 (count=2.8866, shape=0.1265, zero=0.0423, fhd=0.0271, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6645, R²=0.4404, RMSE=19.97, ZeroAcc=98.28%m
+
+Epoch 85/100 (212.0s)
+  Train Loss: 1.6231 (count=2.8979, shape=0.1331, zero=0.0467, fhd=0.0270, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6122 (count=2.8925, shape=0.1264, zero=0.0386, fhd=0.0270, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6648, R²=0.4405, RMSE=19.97, ZeroAcc=98.25%m
+
+Epoch 86/100 (212.2s)
+  Train Loss: 1.6230 (count=2.8974, shape=0.1331, zero=0.0464, fhd=0.0272, emd=0.0000, peak alignment=0.0000)
+  Val Loss:   1.6070 (count=2.8788, shape=0.1262, zero=0.0482, fhd=0.0272, emd=0.0000, peak alignment=0.0000)
+  Val Metrics: Corr=0.6654, R²=0.4356, RMSE=20.05, ZeroAcc=97.79%m
+
+Early stopping after 86 epochs (patience=15)
+============================================================
+Training Complete!
+============================================================
+Loaded best model for testing (correlation: {checkpoint['best_val_correlation']:.4f})
+
+============================================================
+Test Results
+============================================================
+  Normalized correlation:     0.7934
+  Normalized RMSE:            0.1776
+  Correlation:     0.6628
+  RMSE:            19.8332
+  R²:              0.4331
+  MAE:             9.7271
+  Zero Accuracy:   98.08%
+============================================================
+Training curves saved to checkpoints_small_10_FHD_corrhigh_noground/training_curves.png
+
+============================================================
+Training Complete!
+============================================================
+Best validation loss: 1.6065
+Test RMSE: 19.8332
+Test R²: 0.4331
+============================================================
+Loading data from data
+Loaded 101110 waveform pairs
+Data splits: train=80888, val=10111, test=10111
+
+============================================================
+Correlation between LVIS and AOP waveforms:
+============================================================
+  Normalized correlation: 0.7262
+  Normalized RMSE: 0.1844
+  Correlation: 0.5969
+  RMSE: 158.9203
+  R²: -90.9875
+  MAE: 79.2858
+============================================================
+
+============================================================
+CSC Metrics: LVIS vs Ground Truth ALS
+============================================================
+VCR correlation: 0.6206
+FHD correlation: 0.7362
+============================================================
+
+============================================================
+CSC Evaluation Results:
+============================================================
+  VCR Corr: 0.8371
+  VCR RMSE: 15.7843
+  FHD Corr: 0.9094
+  FHD RMSE: 0.1604
+============================================================
