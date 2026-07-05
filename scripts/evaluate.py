@@ -125,7 +125,6 @@ def compute_lvis_aop_metrics(LVIS_wf_list, AOP_wf_list, config):
         correlation = 0.0
     ss_res = np.sum((aop_counts_all - lvis_counts_all) ** 2)
     ss_tot = np.sum((aop_counts_all - np.mean(aop_counts_all)) ** 2)
-    r_squared = 1 - ss_res / ss_tot if ss_tot > 0 else 0.0
     
     # Normalized metrics on concatenated normalized waveform pairs
     rmse_normalized = np.sqrt(np.mean((lvis_counts_norm_all - aop_counts_norm_all) ** 2))
@@ -141,7 +140,6 @@ def compute_lvis_aop_metrics(LVIS_wf_list, AOP_wf_list, config):
     print(f"  RMSE: {rmse:.4f}")
     print(f"  Normalized correlation: {correlation_normalized:.4f}")
     print(f"  Normalized RMSE: {rmse_normalized:.4f}")
-    print(f"  R²: {r_squared:.4f}")
     print(f"  MAE: {mae:.4f}")
     print("="*60)
 
