@@ -479,7 +479,6 @@ Test Results
   Correlation:     0.6658
   RMSE:            19.6588
   MAE:             9.4517
-  R²:              0.4431
   Zero Accuracy:   98.25%
 ============================================================
 Training curves saved to checkpoints_small_10_noground/training_curves.png
@@ -502,7 +501,6 @@ Correlation between LVIS and AOP waveforms:
   Normalized RMSE: 0.1844
   Correlation: 0.5969
   RMSE: 158.9203
-  R²: -90.9875
   MAE: 79.2858
 ============================================================
 
