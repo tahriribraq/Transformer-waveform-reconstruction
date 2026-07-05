@@ -184,7 +184,6 @@ def main():
     print("="*60)
     print(f"Best validation loss: {min(results['val_loss']):.4f}")
     print(f"Test RMSE: {test_metrics['rmse']:.4f}")
-    print(f"Test R²: {test_metrics['r_squared']:.4f}")
     print("="*60)
 
 if __name__ == '__main__':
