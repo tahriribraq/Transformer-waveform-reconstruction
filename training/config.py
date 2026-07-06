@@ -49,8 +49,6 @@ class TrainingConfig:
     lambda_zero_penalty: float = 1.0
     lambda_fhd: float = 0.6
     lambda_vcr: float = 0.5
-    lambda_emd: float = 0.0
-    lambda_peak: float = 0.0
     
     # FHD settings
     bin_width: float = 1.0  # Match evaluation
