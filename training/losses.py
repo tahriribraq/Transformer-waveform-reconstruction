@@ -467,8 +467,6 @@ class CombinedLoss(nn.Module):
         output_heights: np.ndarray,  # Required for FHD computation
         lambda_data_count: float = 1.0,    # Weight for count loss in data region
         lambda_shape: float = 1.0,      # Weight for shape loss in data region
-        lambda_emd: float = 0, # Weight for Earth Mover's Distance loss (vertical alignment)
-        lambda_peak: float = 0, # Weight for peak alignment loss (matching peak positions)
         lambda_zero_penalty: float = 0.3,   # Weight for zero-region penalty
         lambda_fhd: float = 0.6,   # Weight for FHD loss
         lambda_vcr: float = 0.5,   # Weight for VCR loss
@@ -481,16 +479,12 @@ class CombinedLoss(nn.Module):
         self.lambda_data_count = lambda_data_count
         self.lambda_shape = lambda_shape
         self.lambda_zero_penalty = lambda_zero_penalty
-        self.lambda_emd = lambda_emd
-        self.lambda_peak = lambda_peak
         self.lambda_fhd = lambda_fhd   
         self.lambda_vcr = lambda_vcr
         self.eps = eps
         
         self.nb_loss = NegativeBinomialNLLLoss(eps=eps)
         self.shape_loss = ShapeSimilarityLoss(eps=eps)
-        self.emd_loss = EarthMoverDistanceLoss(eps=eps)
-        self.peak_loss = PeakAlignmentLoss(eps=eps)
         
         # FHD and VCR losses
         if use_correlation:
@@ -555,18 +549,6 @@ class CombinedLoss(nn.Module):
             losses['vcr'] = self.vcr_loss(mu, target, data_mask)
         else:
             losses['vcr'] = torch.tensor(0.0, device=mu.device)
-            
-        # === EMD loss (optional) === #
-        if self.lambda_emd > 0:
-            losses['emd'] = self.emd_loss(mu, target, data_mask)
-        else:
-            losses['emd'] = torch.tensor(0.0, device=mu.device)
-
-        # === Peak alignment loss (optional) === #
-        if self.lambda_peak > 0:
-            losses['peak'] = self.peak_loss(mu, target, data_mask)
-        else:
-            losses['peak'] = torch.tensor(0.0, device=mu.device)
         
         # === Combined ===
         losses['total'] = (
@@ -574,9 +556,7 @@ class CombinedLoss(nn.Module):
             self.lambda_shape * losses['shape'] +
             self.lambda_zero_penalty * losses['zero_penalty'] +
             self.lambda_fhd * losses['fhd'] +
-            self.lambda_vcr * losses['vcr'] +
-            self.lambda_emd * losses['emd'] +
-            self.lambda_peak * losses['peak']
+            self.lambda_vcr * losses['vcr']
         )
         
         return losses
