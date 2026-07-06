@@ -61,8 +61,6 @@ class Trainer:
             lambda_data_count=config.lambda_count,
             lambda_zero_penalty=config.lambda_zero_penalty,
             lambda_shape=config.lambda_shape,
-            lambda_peak=config.lambda_peak,
-            lambda_emd=config.lambda_emd,
             lambda_fhd=config.lambda_fhd,
             lambda_vcr=config.lambda_vcr,
             bin_width=1.0,  # Match your evaluation function
@@ -116,7 +114,7 @@ class Trainer:
         """Train for one epoch."""
         self.model.train()
         
-        loss_keys = ['total', 'data_count', 'shape', 'zero_penalty', 'fhd', 'vcr', 'emd', 'peak']
+        loss_keys = ['total', 'data_count', 'shape', 'zero_penalty', 'fhd', 'vcr']
         total_losses = {k: 0.0 for k in loss_keys}
         num_batches = 0
         
@@ -173,9 +171,7 @@ class Trainer:
                 'shape': f"{losses['shape'].item():.4f}",
                 'zero': f"{losses['zero_penalty'].item():.4f}",
                 'fhd': f"{losses['fhd'].item():.4f}",
-                'vcr': f"{losses['vcr'].item():.4f}",
-                'emd': f"{losses['emd'].item():.4f}",
-                'peak': f"{losses['peak'].item():.4f}"
+                'vcr': f"{losses['vcr'].item():.4f}"
             })
             
             # Memory monitoring every 100 batches
@@ -197,7 +193,7 @@ class Trainer:
         """Validate the model."""
         self.model.eval() # Disable dropout, use batchnorm running stats
         
-        loss_keys = ['total', 'data_count', 'shape', 'zero_penalty', 'fhd', 'vcr', 'emd', 'peak']
+        loss_keys = ['total', 'data_count', 'shape', 'zero_penalty', 'fhd', 'vcr']
         total_losses = {k: 0.0 for k in loss_keys}
         num_batches = 0
         
@@ -343,17 +339,13 @@ class Trainer:
                   f"shape={train_losses['shape']:.4f}, "
                   f"zero={train_losses['zero_penalty']:.4f}, "
                   f"fhd={train_losses['fhd']:.4f}, "
-                  f"vcr={train_losses['vcr']:.4f}, "
-                  f"emd={train_losses['emd']:.4f}, "
-                  f"peak alignment={train_losses['peak']:.4f})")
+                  f"vcr={train_losses['vcr']:.4f}")
             print(f"  Val Loss:   {val_losses['total']:.4f} "
                   f"(count={val_losses['data_count']:.4f}, "
                   f"shape={val_losses['shape']:.4f}, "
                   f"zero={val_losses['zero_penalty']:.4f}, "
                   f"fhd={train_losses['fhd']:.4f}, "
-                  f"vcr={train_losses['vcr']:.4f}, "
-                  f"emd={val_losses['emd']:.4f}, "
-                  f"peak alignment={val_losses['peak']:.4f})")
+                  f"vcr={train_losses['vcr']:.4f}")
             print(f"  Val Metrics: Corr={val_metrics['correlation']:.4f}, "
                   f"R²={val_metrics['r_squared']:.4f}, "
                   f"RMSE={val_metrics['rmse']:.2f}, "
